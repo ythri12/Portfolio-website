@@ -4,60 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>To-Do App</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
-    <nav>
+    <h1>To-Do List App</h1>
 
-        <h1>My Portfolio</h1>
+    <div class="input-section">
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <input type="text"
+               id="taskInput"
+               placeholder="Enter task">
 
-        <button onclick="toggleMode()">Dark Mode</button>
+        <button id="addBtn">Add</button>
 
-    </nav>
+    </div>
 
-</header>
+    <div class="filter-buttons">
 
-<main>
+        <button onclick="filterTasks('all')">All</button>
 
-    <section>
+        <button onclick="filterTasks('active')">Active</button>
 
-        <h2>Welcome</h2>
+        <button onclick="filterTasks('completed')">Completed</button>
 
-        <p>
-            Hello! I am learning Web Development and building responsive websites.
-        </p>
+    </div>
 
-    </section>
+    <ul id="taskList"></ul>
 
-    <section>
-
-        <h2>Skills</h2>
-
-        <article>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-        </article>
-
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 My Portfolio</p>
-</footer>
+</div>
 
 <script src="script.js"></script>
 

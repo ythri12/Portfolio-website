@@ -1,137 +1,90 @@
-:root{
-    --bg:white;
-    --text:black;
-    --card:white;
-}
-
-.dark-mode{
-    --bg:#111;
-    --text:white;
-    --card:#222;
-}
-
 body{
     font-family:Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:var(--bg);
-    color:var(--text);
-}
-
-/* Header */
-
-header{
-    background:#0077ff;
-    color:white;
-    padding:20px;
-}
-
-/* Navigation */
-
-nav{
+    background:#f4f4f4;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
+    height:100vh;
+    margin:0;
 }
 
-ul{
-    display:flex;
-    list-style:none;
-    padding:0;
-}
-
-li{
-    margin:10px;
-}
-
-a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-a:hover{
-    color:yellow;
-}
-
-/* Sections */
-
-section{
-    padding:40px;
-    margin:20px;
-    background:var(--card);
+.container{
+    background:white;
+    padding:20px;
+    width:400px;
     border-radius:10px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.1);
-    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-section:hover{
-    transform:translateY(-5px);
+h1{
+    text-align:center;
 }
 
-/* Projects Grid */
-
-.projects-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
-}
-
-/* Form */
-
-form{
+.input-section{
     display:flex;
-    flex-direction:column;
-    gap:15px;
+    gap:10px;
 }
 
-input,
-textarea{
+input{
+    flex:1;
     padding:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
 }
-
-/* Buttons */
 
 button{
+    padding:10px;
+    border:none;
     background:#0077ff;
     color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
     cursor:pointer;
+    border-radius:5px;
 }
 
 button:hover{
     background:#0055cc;
 }
 
-/* Footer */
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
+ul{
+    list-style:none;
+    padding:0;
 }
 
-/* Responsive */
+li{
+    background:#eee;
+    margin-top:10px;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:5px;
+}
 
-@media(max-width:768px){
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
 
-    nav{
+.filter-buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.task-buttons button{
+    margin-left:5px;
+}
+
+@media(max-width:500px){
+
+    .container{
+        width:90%;
+    }
+
+    .input-section{
         flex-direction:column;
     }
 
-    ul{
+    .filter-buttons{
         flex-direction:column;
-        align-items:center;
-    }
-
-    section{
-        margin:10px;
-        padding:20px;
+        gap:10px;
     }
 }
