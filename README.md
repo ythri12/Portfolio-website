@@ -1,29 +1,27 @@
-# Personal Portfolio Website
+# Portfolio Website
 
-A responsive multi-page personal portfolio website built using HTML5 and CSS3 following semantic HTML standards, accessibility guidelines (WCAG), and SEO-friendly practices.
+## Description
+This is a responsive portfolio website developed using HTML5, CSS3, and JavaScript.
 
 ## Features
-
-- Semantic HTML5 structure
-- Responsive design
-- Accessibility support using ARIA labels
-- SEO-friendly meta tags
-- Multi-page navigation
-- Contact form
-- Clean modern UI
+- Responsive Design
+- CSS Grid Layout
+- Flexbox Navigation
+- Dark Mode Toggle
+- Contact Form
+- Hover Effects
+- Multi-page Website
 
 ## Technologies Used
-
 - HTML5
 - CSS3
+- JavaScript
 
-## Pages Included
-
+## Pages
 - Home
 - About
 - Projects
 - Contact
 
 ## Author
-
-Mythri Budumuri
+Mythri
