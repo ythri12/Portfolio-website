@@ -1,29 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Projects</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Projects</h1>
+
+    <nav>
+
+        <h1>Projects</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button onclick="toggleMode()">Dark Mode</button>
+
+    </nav>
+
 </header>
 
 <main>
 
-<section>
-<h2>Portfolio Website</h2>
-<p>Responsive portfolio website using HTML and CSS.</p>
-</section>
+<div class="projects-container">
 
-<section>
-<h2>To Do App</h2>
-<p>Task management app using JavaScript.</p>
-</section>
+    <section>
+
+        <h2>Portfolio Website</h2>
+
+        <p>
+            Responsive portfolio website using HTML and CSS.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>To Do App</h2>
+
+        <p>
+            Task management app using JavaScript.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Weather App</h2>
+
+        <p>
+            Weather forecast website using API integration.
+        </p>
+
+    </section>
+
+</div>
 
 </main>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,8 +1,24 @@
+:root{
+    --bg:white;
+    --text:black;
+    --card:white;
+}
+
+.dark-mode{
+    --bg:#111;
+    --text:white;
+    --card:#222;
+}
+
 body{
-    font-family: Arial;
+    font-family:Arial, sans-serif;
     margin:0;
     padding:0;
+    background:var(--bg);
+    color:var(--text);
 }
+
+/* Header */
 
 header{
     background:#0077ff;
@@ -10,15 +26,19 @@ header{
     padding:20px;
 }
 
+/* Navigation */
+
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 ul{
     display:flex;
     list-style:none;
+    padding:0;
 }
 
 li{
@@ -28,11 +48,67 @@ li{
 a{
     color:white;
     text-decoration:none;
+    font-weight:bold;
 }
+
+a:hover{
+    color:yellow;
+}
+
+/* Sections */
 
 section{
     padding:40px;
+    margin:20px;
+    background:var(--card);
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
+
+section:hover{
+    transform:translateY(-5px);
+}
+
+/* Projects Grid */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+/* Form */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Buttons */
+
+button{
+    background:#0077ff;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055cc;
+}
+
+/* Footer */
 
 footer{
     background:#222;
@@ -41,14 +117,21 @@ footer{
     padding:20px;
 }
 
+/* Responsive */
+
 @media(max-width:768px){
 
-nav{
-    flex-direction:column;
-}
+    nav{
+        flex-direction:column;
+    }
 
-ul{
-    flex-direction:column;
-}
+    ul{
+        flex-direction:column;
+        align-items:center;
+    }
 
+    section{
+        margin:10px;
+        padding:20px;
+    }
 }
